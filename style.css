@@ -284,7 +284,7 @@ img{
     {
         position: fixed;
         top: 75px;
-        left: 0;
+        left: -100%;
         display: block;
         padding: 100px 50px;
         text-align: center;
@@ -295,14 +295,20 @@ img{
         z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
+    .menu.active
+    {
+        left: 0;
+    }
     header ul li a
     {
         color:white;
+        font-size: 24px;
+        margin: 15px;
     }
     .toggle{
         width: 40px;
         height: 40px;
-        background: url(menu.png);
+        background: url(images/menu.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
@@ -311,10 +317,41 @@ img{
     .toggle.active{
         width: 40px;
         height: 40px;
-        background: url(close.png);
+        background: url(images/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1)
+    }
+    section{
+        padding:100px 50px;
+    }
+    .banner{
+        padding:150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentBx h3{
+        font-size:20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .contactme
+    {
+        padding:100px 50px;
+    }
+    .contactme h1{
+        font-size: 20px;
     }
 }
