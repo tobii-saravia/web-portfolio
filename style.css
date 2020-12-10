@@ -311,7 +311,7 @@ img{
         background: url(images/menu.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 30px;
+        background-size: 29px;
         cursor: pointer;
     }
     .toggle.active{
