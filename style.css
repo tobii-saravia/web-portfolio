@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+section
+ {
+padding: 100px;
+}
+.header{
+    height: 100vh;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background:rgb(20, 20, 20);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height: auto;
+}
+.banner h2
+{
+    font-size: 3em;
+    color:white;
+    font-weight: 100;
+    line-height: 1.5em;
+    position: relative;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    color:rgb(255, 196, 0);
+    font-weight: bold;
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color:white;
+    font-weight: 70;
+    position: relative;
+
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    }
+header.sticky{
+    background:black;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header.sticky ul li a{
+    color: white;
+}
+
+header .logo {
+    color:white;
+    font-size:24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+header.sticky .logo{
+    color:  white;
+}
+header ul{
+    position: relative;
+    display:flex;
+
+}
+
+header ul li{
+    position: relative;
+    list-style:none;    
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color:white;
+    text-decoration: none;    
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color:black;
+}
+
+.heading h2{
+    font-weight:800;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content:space-between;
+}
+.contentBx{
+    padding-right: 30px;
+}
+.contentBx h3 {
+   font-size: 24px;
+   margin-bottom: 30px;
+}
+.w50{
+    min-width: 50%;
+}
+
+img{
+   max-width: 60%; 
+}
+
+.skills{
+    background:rgb(20, 20, 20);
+}
+.heading.white{
+    color:white;
+}
+
+.skills .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills .content .myskills{
+    padding:40px 90px;
+    background:#222;
+    color:#fff;
+    max-width: 300px;
+    margin:50px;
+    text-align: center;
+    transition:0.5s;
+    
+}
+
+.skills .content .myskills:hover{
+   background:rgb(255, 212, 19);
+    
+}
+
+.skills .content .myskills img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.contactme{
+    background:rgb(255, 212, 19);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contactme .contactinfo h2{
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+.contactme .contactinfo .contactInf{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.contactme .contactinfobox{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contactme .contactinfobox .box{
+    padding:40px 90px;
+    background:#222;
+    color:#fff;
+    max-width: 300px;
+    margin:50px;
+    text-align: center;
+    transition:0.5s;
+}
+
+.contactme .contactinfobox .box:hover{
+    background:#ff3af5;
+}
+.contactme .heading h1{
+  
+    color:black;
+    font-weight: bold;
+    font-size: 45px;
+}
+.contactme .heading p{
+    color:black;
+    font-size: 20px;
+}
+
+.accounts{
+    background: #222;
+}
+.accounts .footer{
+    color:white;
+    text-align: center;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.accounts .footer .phrase{
+    color:#ff3af5;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.accounts .footer .stevejobs{
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.accounts .footer .followme{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.accounts .footer .footer-links{
+    margin-bottom:25px;
+    font-size: 30px;
+}
+.accounts .footer .footer-links .footer-icon{
+    font-size: 1.5rem;
+    color:white;
+    margin:30px;
+}
+.accounts .footer .footer-links .footer-icon:hover{
+    color:#ff3af5;
+}
+
+/*responsive*/
+@media (max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    header ul li a
+    {
+        color:white;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+}
